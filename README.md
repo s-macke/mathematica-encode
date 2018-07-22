@@ -16,7 +16,7 @@ function of Mathematica. A way to make sure that your source code can not be dir
 
 Because the security mechanism doesn't use any keys it relies solely on security by obscurity. The safety of this function has already been [discussed](https://mathematica.stackexchange.com/questions/3199/how-safe-is-encode).
 
-When I saw this function I took it as a challenge and tried to decrypt it via an ordinary known plaintext attack. It took around 8 hours when the unencrypted code appeared on my screen.
+When I saw this function I took it as a challenge and tried to decrypt it via an ordinary chosen plaintext attack. It took around 8 hours when the unencrypted code appeared on my screen.
 
 This code here, written in Python shows the encoding function. First it compresses every char by using Huffman encoding and a fixed internal table. It then encodes the bitstream to some sort of two-byte base 95 compression.
 
