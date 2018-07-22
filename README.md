@@ -20,6 +20,6 @@ When I saw this function I took it as a challenge and tried to decrypt it via an
 
 This code here, written in Python shows the encoding function. First it compresses every char by using Huffman encoding and a fixed internal table. It then encodes the bitstream to some sort of two-byte base 95 compression.
 
-The decoding function it not part of this repository. Feel free to revert my code :-)
+The decoding function is not part of this repository. Feel free to revert my code :-)
 
 
