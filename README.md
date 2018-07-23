@@ -11,7 +11,7 @@ TYM9T6FpLSdMaY([m`qA!vLt/+#f;*&: g1lL]#goFSe3tKFK6IY9z(#>,c{-YY/H.S;OE
 ....
 ```
 
-This random chars are a result of the [Encode](http://reference.wolfram.com/language/ref/Encode.html)
+These random chars are a result of the [Encode](http://reference.wolfram.com/language/ref/Encode.html)
 function of Mathematica. A way to make sure that your source code can not be directly edited. 
 
 Because the security mechanism doesn't use any keys it relies solely on security by obscurity. The safety of this function has already been [discussed](https://mathematica.stackexchange.com/questions/3199/how-safe-is-encode).
