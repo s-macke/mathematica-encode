@@ -1,5 +1,5 @@
 # mathematica-encode
-Imagine someone id giving you an awesome code. You want to analyze how it works, but when you look at it, it turns out to be
+Imagine someone is giving you an awesome code. You want to analyze how it works, but when you look at it, it turns out to be
 
 ```
 (*!1N!*)mcm
