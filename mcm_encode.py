@@ -41,7 +41,7 @@ def base95_encode(s):
     code = split_string(s, 13)
     result = ''
     for c in code:
-        # convert string of 13 bits to in in reversed order
+        # convert string of 13 bits to be in reversed order
         number = int(c[::-1], 2)
         hi = number // 95
         lo = number - hi*95
