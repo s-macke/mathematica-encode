@@ -29,6 +29,8 @@ def huffman_encode(body):
     result = []
     for i in range(0, len(body), 1):
         result.append(huffman_table[ord(body[i])])
+    # encode a final EOT character
+    result.append(huffman_table[4])
     bits = ''.join(result)
     # add trailing zeros to match a multiple 13 bits
     nzeros = 13 - (len(bits) % 13)
@@ -57,13 +59,13 @@ def main():
 
     with open(args.input_file, 'r') as file:
         body = file.read()
-    
+
     bits = huffman_encode(body)
     code = base95_encode(bits)
 
     with open(args.output_file, 'w+') as result_file:
         result_file.write('(*!1N!*)mcm\n');
-        result_file.write('\n'.join(split_string(code, 70)))
+        result_file.write('\n'.join(split_string(code, 70) + ['']))
 
 if __name__ == '__main__':
     main()
